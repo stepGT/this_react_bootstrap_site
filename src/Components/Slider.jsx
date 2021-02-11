@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
 
 export default function Slider() {
+    const [index, setIndex] = useState(0);
+    const handleSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex);
+    };
     // Free placeholder images
     let arrImg = [
         'https://loremflickr.com/1280/720?random=1',
@@ -10,7 +14,7 @@ export default function Slider() {
     ]
 
     return (
-        <Carousel wrap={false} onSlide={() => {}} indicators={true} fade={true}>
+        <Carousel activeIndex={index} onSelect={handleSelect}>
             {
                 arrImg.map((img, i) =>
                     <Carousel.Item key={i}>
