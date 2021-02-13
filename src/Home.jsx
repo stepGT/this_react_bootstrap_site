@@ -16,8 +16,8 @@ export const Home = () => {
             <Container style={{ paddingTop: '2rem', paddingBottom: '2rem' }}>
                 <Row>
                     {
-                        arrImg.map(img =>
-                            <Col>
+                        arrImg.map((img, i) =>
+                            <Col key={i}>
                                 <Card>
                                     <Card.Img variant="top" src={img} />
                                     <Card.Body>
