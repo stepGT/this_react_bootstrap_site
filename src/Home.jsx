@@ -10,6 +10,9 @@ export const Home = () => {
         'https://loremflickr.com/320/240?random=2',
         'https://loremflickr.com/320/240?random=3'
     ]
+
+    const loremflickr = 'https://loremflickr.com/640/480?random=4'
+
     return (
         <>
             <Slider />
@@ -34,7 +37,35 @@ export const Home = () => {
                     }
                 </Row>
             </Container>
-            <Jumbotron/>
+            <Jumbotron />
+            <Container>
+                <Row>
+                    <Col md={7}>
+                        <img className="img" src={loremflickr} />
+                    </Col>
+                    <Col md={5}>
+                        <h2>stepGT channel</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Eaque culpa repudiandae laboriosam
+                        illum sit doloribus qui. Eos earum adipisci
+                        reprehenderit quisquam velit animi accusamus
+                        labore voluptatum unde voluptates.
+                            Necessitatibus, nostrum.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Eaque culpa repudiandae laboriosam
+                        illum sit doloribus qui. Eos earum adipisci
+                        reprehenderit quisquam velit animi accusamus
+                        labore voluptatum unde voluptates.
+                            Necessitatibus, nostrum.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Eaque culpa repudiandae laboriosam
+                        illum sit doloribus qui. Eos earum adipisci
+                        reprehenderit quisquam velit animi accusamus
+                        labore voluptatum unde voluptates.
+                            Necessitatibus, nostrum.</p>
+                    </Col>
+                </Row>
+            </Container>
         </>
     )
 }
