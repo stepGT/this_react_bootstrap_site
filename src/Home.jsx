@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Container, Row, Card, Button } from 'react-bootstrap'
 import Slider from './Components/Slider'
+import Jumbotron from './Components/Jumbotron'
 
 export const Home = () => {
     // Free placeholder images
@@ -33,6 +34,7 @@ export const Home = () => {
                     }
                 </Row>
             </Container>
+            <Jumbotron/>
         </>
     )
 }
